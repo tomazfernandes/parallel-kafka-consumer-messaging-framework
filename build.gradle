@@ -1,0 +1,31 @@
+plugins {
+    id 'io.spring.dependency-management' version '1.0.13.RELEASE'
+    id 'java'
+}
+
+group = 'io.confluent.kafka.parallel.consumer.spring'
+version = '0.1.0-SNAPSHOT'
+sourceCompatibility = '8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation ('io.awspring.cloud:spring-cloud-aws-starter-sqs:3.0.0-M2') {
+        exclude group: "software.amazon.awssdk"
+    }
+    implementation 'io.confluent.parallelconsumer:parallel-consumer-core:0.5.2.2'
+    implementation 'io.confluent.parallelconsumer:parallel-consumer-reactor:0.5.2.2'
+    testImplementation "org.testcontainers:kafka:1.17.3"
+    testImplementation 'org.testcontainers:junit-jupiter:1.17.3'
+    testImplementation 'org.assertj:assertj-core:3.23.1'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine'
+    testImplementation 'org.springframework:spring-test:5.3.22'
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
