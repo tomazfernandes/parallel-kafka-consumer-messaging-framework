@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package io.confluent.kafka.parallel.consumer.spring;
+package com.github.tomazfernandes.kafka.parallelconsumer;
 
 import io.awspring.cloud.sqs.listener.AbstractMessageListenerContainer;
 import io.awspring.cloud.sqs.listener.AbstractPipelineMessageListenerContainer;

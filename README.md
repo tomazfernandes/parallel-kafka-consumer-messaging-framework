@@ -1,6 +1,6 @@
-# 🌿 Confluent Parallel Kafka Consumer for Spring 🌿
+# Parallel Kafka Consumer Support for Java Applications
 
-`Spring`-based framework for processing `Apache Kafka` records with ConfluentInc's [ParallelKafkaConsumer](https://github.com/confluentinc/parallel-consumer) project.
+Framework for integrating java applications with Apache Kafka and ConfluentInc's [ParallelKafkaConsumer](https://github.com/confluentinc/parallel-consumer) project.
 
 > "Parallel Apache Kafka client wrapper with client side queueing, a simpler consumer/producer API with key concurrency and extendable non-blocking IO processing."
 
@@ -91,13 +91,7 @@ public class KafkaParallelDemoApplication {
 }
 ```
 
-This project is based on the new `Spring Cloud AWS SQS` integration, the assembly-time of which is based on `Spring for Apache Kafka`.
-
-While it depends on the `Spring Cloud AWS SQS` artifact, there are no dependencies to `AWS SDK` artifacts.
-
-As improvements and new features are incorporated to the `Spring Cloud AWS SQS` integration, this project should benefit as well.
-
-Such improvements include:
+Improvements coming soon include:
 * `Template` class for sending messages
 * `@SendTo`
 * `@ReplyTo`

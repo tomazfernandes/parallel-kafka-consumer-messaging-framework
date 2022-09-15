@@ -3,7 +3,7 @@ plugins {
     id 'java'
 }
 
-group = 'io.confluent.kafka.parallel.consumer.spring'
+group = 'com.github.tomazfernandes'
 version = '0.1.0-SNAPSHOT'
 sourceCompatibility = '8'
 
